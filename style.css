@@ -51,6 +51,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- 404
 
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Prata&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Prata&display=swap');
 
@@ -970,6 +971,7 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
+
 /*--------------------------------------------------------------
 # Pages
 --------------------------------------------------------------*/
@@ -1047,4 +1049,82 @@ textarea {
 	font-style: normal;
 	font-weight: 700;
 	line-height: 24px; /* 171.429% */
+}
+
+/* Footer
+------------------------------------------ */
+
+.site-footer {
+	background-color: #030303;
+
+	width: 100vw;
+	height: 168px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.site-footer .footer-content {
+	font-family: "Open Sans", sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 10px;
+	letter-spacing: 2px;
+
+	width: 1200px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.footer-content .upper-info, .footer-content .lower-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	color: #FFFEFF;
+}
+
+.footer-content .lower-info p {
+	color: #999;
+	line-height: 130%;
+	width: 100%;
+	text-align: center;
+}
+
+.upper-info ul {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-direction: row;
+	gap: 32px;
+}
+
+.upper-info .contacts {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	gap: 24px;
+	width: 131px;
+}
+
+.upper-info .contacts img {
+	width: 32px;
+	height: 32px;
+}
+
+.upper-info a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.upper-info ul li {
+	list-style-type: none;
+	cursor: pointer;
+
+	height: fit-content;
 }
