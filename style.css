@@ -47,8 +47,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Utilities
 	- Accessibility
 	- Alignments
+# Pages
+	- 404
 
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Prata&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Prata&display=swap');
 
 /*--------------------------------------------------------------
@@ -716,10 +720,8 @@ textarea {
 }
 
 .site-main .comment-navigation,
-.site-main
-.posts-navigation,
-.site-main
-.post-navigation {
+.site-main .posts-navigation,
+.site-main .post-navigation {
 	margin: 0 0 1.5em;
 }
 
@@ -967,6 +969,86 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+
+/* 404
+--------------------------------------------- */
+/*.error-404 {*/
+/*	display: flex;*/
+/*	width: 1440px;*/
+/*	padding-bottom: 138px;*/
+/*	flex-direction: column;*/
+/*	align-items: center;*/
+/*	gap: 101px;*/
+/*}*/
+.error-404 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 138px;
+}
+
+.block-404 {
+	display: flex;
+	width: 788px;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+}
+
+.block-404 > h3 {
+	width: 283px;
+	color: #555A62;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21px; /* 100% */
+	text-transform: uppercase;
+}
+
+.block-404 > h1 {
+	color: #221F20;
+	text-align: center;
+	font-family: "Prata", serif;
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%
+}
+
+.block-404 > span {
+	color: #221F20;
+	text-align: center;
+	font-family: "Prata", serif;
+	font-size: 200px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 240px */
+}
+
+.block-404 > button {
+	border-radius: 8px;
+	background: #221F20;
+	display: flex;
+	padding: 8px 32px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	color: #FFFEFF;
+	text-align: center;
+	font-family: "Open Sans", serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px; /* 171.429% */
 }
 
 /* Footer
